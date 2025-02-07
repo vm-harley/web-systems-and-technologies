@@ -1,0 +1,128 @@
+<!DOCTYPE html> <!-- Declares the document type and version of HTML being used -->
+<html lang ="en"> <!-- The root element that contains all the content of the web page. -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Defines metadata like character encoding, viewport settings, and more. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- used to control the viewport settings for a webpage. It helps ensure that the webpage is displayed correctly on devices with different screen sizes and resolutions.-->
+    <title>Commonly used HTML Tags</title>
+</head>
+<body>
+    <!-- Headings -->
+    <!-- Headings are used to define titles or subtitles on a webpage. <h1> represents the most important heading, <h2> is used for sub-headings, 
+        and it can be up to <h6> that represents the least important. -->
+    <h1>
+        Commonly used HTML Tags
+    </h1>
+    <hr> <!--creates a line across the page--> 
+    <br> <!-- Line break -->
+    <h2>
+        Group 3
+    </h2>
+
+    <!-- Paragraph -->
+    <p>
+        Prelim: Project 1
+    </p>
+
+    <strong>Important text.</strong>
+    <br>
+     <em>Italicized text</em> <!-- Italicizes text -->
+
+     <!-- Image, Multimedia, and Hyperlink -->
+    <h4>Image, Multimedia, and Hyperlink</h4>
+        <img src="html.jpg" height="100" width="100"> <!--<img>: Embeds an image in the webpage. It requires a src attribute for the image source.-->
+    
+    <audio controls><source src="audio.mp3" type="audio/mp3"></audio> <!-- Embeds audio content. -->
+
+    <video controls><source src="video.mp4" type="video/mp4"></video> <!-- Embeds video content. -->
+<br>
+    <a href = "description.html" target = _self title="Click me.">Click me.</a> <!-- This tag is used to define hyperlinks-->
+
+    <!-- Lists -->
+     <!-- <ul>: An unordered (bulleted) list. -->
+        <!-- <li>: A list item -->
+            <h4>Unordered (bulleted) list</h4>
+    <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+    </ul>
+    
+    <!-- <ol>: Creates an ordered (numbered) list. -->
+        <h4>Ordered (numbered) list</h4>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+    </ol>
+
+    <!-- <dl>: A description list.-->
+        <h4>Description list</h4>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+    </dl>
+
+    <!-- Table -->
+     <!-- <tr>: Row in the table. -->
+        <!-- <th>: Header cell in a table.-->
+            <!-- <td>: Data in the table -->
+                <h4>Table</h4>
+    <table bgcolor="black" width="500">
+        <tr bgcolor="lightgray">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thursday</th>
+            <th width="100">Friday</th>
+            <th width="100">Saturday</th>
+        </tr>
+        <tr bgcolor="white">
+            <td width="100">1</td>
+            <td width="100">2</td>
+            <td width="100">3</td>
+            <td width="100">4</td>
+            <td width="100">5</td>
+            <td width="100">6</td>
+            <td width="100">7</td>
+        </tr>
+    </table>
+        <br>
+        <h4>Form</h4>
+
+    <!-- Form -->
+     <!-- <form>: A form for user input. -->
+        <!-- <input>: An input field where users can enter data. -->
+         <!-- <div>: A block-level element used to group content together for styling or layout purposes. -->
+            <!-- form action: URL where the form data will be sent when the form is submitted.-->
+             <!-- method: Defines the HTTP method used to send the form data.-->
+    <form action="form.php" method="POST">
+
+        <div>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" placeholder="ex:Renz Charles" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname" placeholder="ex:Olbe" required>
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset"> <!-- Defines a button that, when clicked, resets all the form fields to their default values. -->
+        </div>
+
+        <div>
+            <input type="submit"> <!-- Creates a submit button that allows the user to submit the form data to the server. -->
+        </div>
+    </form>
+
+    <!-- <button>: Defines a clickable button. -->
+        <br>
+        <button type="submit">Next</button>
+
+</body>
+</html>
